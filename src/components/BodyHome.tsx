@@ -75,8 +75,8 @@ const BodyHome = () => {
                    <>
                         {socials.map(x=>{
                             return(
-                            <div className='social-media-divs'>
-                                <a style ={x.style} href = {x.href}>{x.icontag}</a>
+                            <div key={x.id} className='social-media-divs'>
+                                <a key={x.id} style ={x.style} href = {x.href}>{x.icontag}</a>
                             </div>
                         )})}
                    </>

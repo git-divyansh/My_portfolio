@@ -43,7 +43,7 @@ const Portfolio = () => {
 
                             <div className='inside-project-card-descrip'> 
                                 <p>MindScribe is a comprehensive note-taking application designed to enhance your productivity and simplify the way you capture, 
-                                    organize, and manage your notes. Whether you're a student, professional, or anyone seeking an efficient way to keep track of your 
+                                    organize, and manage your notes. Whether you&apos;re a student, professional, or anyone seeking an efficient way to keep track of your 
                                     thoughts and information, NotesMaster is here to revolutionize your note-taking experience.
                                     <br/><br/>
                                     <a href="https://github.com/git-divyansh/MindScribe" style={{color : "white", overflow : "hidden", display : "flex", justifyContent : "center"}}><BsGithub style={{height : "60px", width : "60px"}}/></a>
