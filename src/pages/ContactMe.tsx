@@ -19,7 +19,7 @@ const ContactMe = () => {
     setMessage("");
   }
 
-  const sendEmail = (e) => {
+  const sendEmail = (e : any) => {
     e.preventDefault();
 
     emailjs.sendForm('service_y9l0t95', 'template_4ye3p1d', ".contact-form", 'SUQRLJ1yAKSGIa1j6')
