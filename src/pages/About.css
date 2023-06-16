@@ -1,0 +1,127 @@
+
+body{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.about{
+    /* background-color: #474044;*/
+    /* background: #280449;
+    background: linear-gradient(90deg, rgba(40,4,73,1) 0%, rgba(42,4,75,1) 39%, rgba(71,7,101,1) 73%, rgba(93,9,121,1) 100%); */
+    height: auto;
+    width: 100%;
+    scroll-behavior: smooth;
+    /* position: relative; */
+}
+
+.about-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* border: 1px solid white; */
+    padding: 5% 5%;
+    margin: 10% 5%;
+    border-radius: 20px;
+    /* background-color: #675f63; */
+    /* background: #211131; */
+    background: #261833;
+}
+
+.about-photo{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 4px;
+    margin-top: 5%;
+    /* border: 1px solid white; */
+}
+
+@media only screen and (max-width: 820px){
+    [class = "about-container"]{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    [class = "about-photo"]{
+        height: 20vh;
+        width: 30vw;
+        margin-bottom: 5%;
+    }
+}
+
+.about-description{
+    /* border: 1px solid white; */
+    margin-left: 5%;
+    width: 69%;
+}
+
+@media only screen and (max-width: 820px){
+    .about-description{
+        width: 100%;
+        padding: 0 0;
+    }
+}
+
+.about-heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 350%;
+}
+
+.about-me{
+    /* border : 1px solid white; */
+    padding: 20px 30px;
+    font-size: large;
+    color: white;
+    letter-spacing: 1cap;
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 490px){
+    .about-me{
+        margin-left: 10px;
+        padding-left: 0;
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 912px){
+    .about-photo{
+        margin-top: 2%;
+        height: 25vh;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .about-photo{
+        margin-top: 0;
+        height: 28vh;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .about-photo{
+        margin-top: 0;
+        height: 20vh;
+    }
+}
+
+.about-generic-icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 5% 2%;
+}
+
+.about-icon{
+    height: 40px;
+	width : 40px;
+    border: 0;
+}
+
+.about-icon:hover{
+    transform: scale(1.1);
+	transition: ease-in-out 0.1s;
+}
+
+/* ---------------- */
+

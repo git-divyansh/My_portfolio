@@ -1,0 +1,58 @@
+.navbar{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    border-bottom: solid 1px var(--primary-color);
+    /* opacity: 0.9; */
+    height: 10%;
+    top: 0;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+    box-shadow: 12px 0 15px -4px rgba(43,46,54,1),
+    -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+    background: rgb(63, 34, 73);
+    /* background: linear-gradient(90deg, rgba(63,34,73,1) 0%, rgba(16,1,29,1) 0%); */
+    background: linear-gradient(90deg, rgb(71, 47, 79) 0%, rgb(34, 27, 43) 0%);
+    /* opacity: 0.9; */
+}
+
+.container-nav{
+    position:static;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+    font-size: 120%;
+    width: 40%;
+    height: 60px;
+    color: rgb(187, 187, 188);
+    /* border: 1px solid black; */  
+}
+
+.bar{
+    /* border: 1px solid black;   */
+    margin: 20px;
+    overflow-x: visible;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    /* border-right: 1px; */
+    
+}
+
+@media only screen and (max-width: 1000px){
+    [class = "container-nav"]{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 632px){
+    [class = "container-nav"]{
+        width: 100%;
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    [class = "bar"]{
+        margin: 5px;
+    }
+}

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right : 0;
+    top : 0;
+    bottom : 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.photo{
+    animation: gradient 15s ease infinite;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    resize: both;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    /* z-index: 1; */
+    /* background-image: url("src/img/background.jpg"); */
+    /* border: 0.1px solid black; */
+}
+
+.intro{
+    /* border: 1px solid black; */
+    /* margin-left: 20%; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px){
+    [class = "intro"]{
+        justify-content: flex-end;
+    }
+}
+
+.first-intro{
+    /* border: 1px solid black; */
+    font-size: 350%;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.second-intro{
+    /* border: 1px solid black; */
+    font-size: 200%;
+    margin-left: 30px;
+}
+
+.container{
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    position: relative;
+    bottom: 0;
+    /* border: solid white 1px; */
+    padding-right: 0;
+}
+
+.social-panel{
+    display: flex;
+    flex-direction: column;
+    /* border: solid white 1px; */
+    position: fixed;
+    left : 85%;
+    height: fit-content;
+    width: 10rem;
+    transform: translateX(11rem);
+    top: 50%;
+    border-radius: 5px;
+    overflow: visible;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .social-panel {
+       visibility: hidden;
+        /* left : 25% */
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    
+    .social-panel {
+       /* visibility: hidden; */
+        left : 79%
+    }
+
+}
+@media screen and (max-width: 1028px) {
+    
+    .social-panel {
+       /* visibility: hidden; */
+        left : 77%
+    }
+
+}
+
+.social-media-divs{
+    transition: ease-in-out 0.4s;
+    background-color: rgba(255, 255, 255, 0.169);
+    /* margin: 4% 2%; */
+    border-radius: 5px;
+    padding: 2% 2%;
+}
+
+.social-media-divs:hover{
+    transform: translateX(-1rem);
+}
+
+.social-media-divs:hover .about-container{
+    /* transform: translateX(-1rem); */
+    border: solid white 10px;
+
+}
+
+
